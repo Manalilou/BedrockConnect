@@ -1,0 +1,181 @@
+{
+  "_comment": "Configuration centralisée des serveurs — src/main/resources/servers-config.json",
+  "_comment2": "Rebuild requis après modification : mvn clean package (dans le dossier serverlist-server/)",
+
+  "user_menu": {
+    "name": "Mes Serveurs",
+    "image": "https://i.imgur.com/nhumQVP.png"
+  },
+
+  "_maintenance_guide": {
+    "ajouter_serveur_direct": [
+      "1. Copier le bloc _template_serveur dans 'featured' ou 'other'",
+      "2. Remplir name, address, port, image",
+      "3. mvn clean package"
+    ],
+    "ajouter_groupe": [
+      "1. Copier le bloc _template_groupe dans 'featured'",
+      "2. Le bouton affichera un sous-menu avec les serveurs du groupe",
+      "3. mvn clean package"
+    ],
+    "desactiver_entree": "Ajouter '\"enabled\": false' — ignoré au chargement sans être supprimé"
+  },
+
+  "_field_reference": {
+    "id":       "Identifiant unique snake_case — utilisé dans les logs",
+    "name":     "Nom affiché in-game",
+    "address":  "IP ou hostname (serveur direct uniquement)",
+    "port":     "Port UDP Bedrock (défaut : 19132, serveur direct uniquement)",
+    "image":    "URL de l'icône (PNG, 64x64 recommandé)",
+    "enabled":  "true/false — désactiver sans supprimer (défaut : true)",
+    "servers":  "Tableau de serveurs directs → transforme l'entrée en GROUPE (sous-menu)"
+  },
+
+  "_template_serveur_direct": {
+    "_usage": "Copier dans 'featured' ou 'other' pour un bouton qui connecte directement",
+    "id":      "mon_serveur",
+    "name":    "Mon Serveur",
+    "address": "play.monserveur.net",
+    "port":    19132,
+    "image":   "https://i.imgur.com/EXEMPLE.png",
+    "enabled": true
+  },
+
+  "_template_groupe": {
+    "_usage": "Copier dans 'featured' pour un bouton qui ouvre un sous-menu",
+    "id":      "mon_groupe",
+    "name":    "Mon Groupe",
+    "image":   "https://i.imgur.com/EXEMPLE.png",
+    "enabled": true,
+    "servers": [
+      { "id": "serveur_1", "name": "Serveur 1", "address": "s1.exemple.net", "port": 19132, "image": "https://i.imgur.com/EXEMPLE1.png" },
+      { "id": "serveur_2", "name": "Serveur 2", "address": "s2.exemple.net", "port": 19133, "image": "https://i.imgur.com/EXEMPLE2.png" }
+    ]
+  },
+
+  "featured": [
+    {
+      "id":      "nationsglory",
+      "name":    "NationsGlory",
+      "image":   "https://s3.nationstools.fr/public/bedrockconnect/Hub.png",
+      "enabled": true,
+      "servers": [
+        { 
+          "id": "ng_hub",
+          "name": "Hub",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19132,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Hub.png"
+        },
+        { 
+          "id": "ng_alpha",
+          "name": "Alpha",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19100,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Alpha.png"
+        },
+        { 
+          "id": "ng_sigma",
+          "name": "Sigma",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19102,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Sigma.png"
+        },
+        { 
+          "id": "ng_omega",
+          "name": "Omega",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19103,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Omega.png"
+        },
+        { 
+          "id": "ng_delta",
+          "name": "Delta",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19101,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Delta.png"
+        },
+        { 
+          "id": "ng_epsilon",
+          "name": "Epsilon",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19104,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Epsilon.png"
+        },
+        { 
+          "id": "ng_island",
+          "name": "Island",
+          "address": "bedrock.nationsglory.fr",
+          "port": 19112,
+          "image": "https://s3.nationstools.fr/public/bedrockconnect/Hub.png"
+        }
+      ]
+    },
+    {
+      "id": "paladium_bedrock",
+      "name": "Paladium Bedrock",
+      "address": "play.paladium-bedrock.fr",
+      "port": 19132,
+      "image": "https://s3.nationstools.fr/public/bedrockconnect/Paladium.png",
+      "enabled": true
+    },
+    {
+      "id": "babaland",
+      "name": "Babaland",
+      "address": "play.playmc.fr",
+      "port": 19132,
+      "image": "https://s3.nationstools.fr/public/bedrockconnect/PlayMC.png",
+      "enabled": true
+    }
+  ],
+
+  "other": [
+    { 
+      "id": "the_hive",
+      "name": "The Hive",         
+      "address": "geo.hivebedrock.network", 
+      "port": 19132, 
+      "image": "https://i.imgur.com/RfxfPGz.png", 
+      "enabled": true 
+    },
+    { 
+      "id": "cubecraft",        
+      "name": "CubeCraft",        
+      "address": "mco.cubecraft.net",        
+      "port": 19132, 
+      "image": "https://i.imgur.com/aFH1NUr.png", 
+      "enabled": true
+    },
+    { 
+      "id": "lifeboat",         
+      "name": "Lifeboat",         
+      "address": "mco.lbsg.net",             
+      "port": 19132, "image": "https://i.imgur.com/LoI7bYx.png", 
+      "enabled": true 
+    },
+    { 
+      "id": "mineville",        
+      "name": "Mineville",        
+      "address": "play.inpvp.net",           
+      "port": 19132, 
+      "image": "https://i.imgur.com/0K4TDut.png", 
+      "enabled": true 
+    },
+    { 
+      "id": "galaxite",         
+      "name": "Galaxite",         
+      "address": "play.galaxite.net",        
+      "port": 19132, 
+      "image": "https://i.imgur.com/VxXO8Of.png", 
+      "enabled": true 
+    },
+    { 
+      "id": "enchanted_dragons",
+      "name": "Enchanted Dragons",
+      "address": "play.enchanted.gg",        
+      "port": 19132, 
+      "image": "https://i.imgur.com/1Fh9CBf.png", 
+      "enabled": true 
+    }
+  ]
+}

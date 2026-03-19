@@ -1,0 +1,73 @@
+{
+    "featured":[
+        {
+            "image":"https:\/\/i.imgur.com\/iaj4mRJ.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19132,"name":"Hub NationsGlory"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/TP9YWiN.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19100,"name":"NationsGlory Alpha"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/WkAzqyQ.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19102,
+            "name":"NationsGlory Sigma"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/VncbPZN.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19103,
+            "name":"NationsGlory Omega"},
+        {   
+            "image":"https:\/\/i.imgur.com\/3SrPav4.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19101,"name":"NationsGlory Delta"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/WA43BaH.png",
+            "address":"bedrock.nationsglory.fr",
+            "port":19104,"name":"NationsGlory Epsilon"
+        }],
+
+    "other":[
+        {
+            "image":"https:\/\/i.imgur.com\/RfxfPGz.png",
+            "address":"geo.hivebedrock.network",
+            "port":19132,
+            "name":"The Hive"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/aFH1NUr.png",
+            "address":"mco.cubecraft.net",
+            "port":19132,
+            "name":"CubeCraft"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/LoI7bYx.png",
+            "address":"mco.lbsg.net",
+            "port":19132,
+            "name":"Lifeboat"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/0K4TDut.png",
+            "address":"play.inpvp.net",
+            "port":19132,
+            "name":"Mineville"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/VxXO8Of.png",
+            "address":"play.galaxite.net",
+            "port":19132,
+            "name":"Galaxite"
+        },
+        {
+            "image":"https:\/\/i.imgur.com\/1Fh9CBf.png",
+            "address":"play.enchanted.gg",
+            "port":19132,
+            "name":"Enchanted Dragons"
+        }
+    ]
+}

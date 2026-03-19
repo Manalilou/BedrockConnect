@@ -1,0 +1,77 @@
+{
+  "motd": {
+    "heading": "Message du Jour",
+    "continueBtn": "Continuer vers la Liste des Serveurs"
+  },
+  "serverInfo": {
+    "motd": "Rejoignez pour Ouvrir la Liste des Serveurs",
+    "subMotd": "Liste des Serveurs BedrockConnect"
+  },
+  "main": {
+    "heading": "Helyxia - Connect",
+    "message": "",
+    "userMenuBtn": "Mes Serveurs",
+    "otherBtn": "Serveurs en Vedette",
+    "exitBtn": "Quitter la Liste"
+  },
+  "manage": {
+    "heading": "Gérer la Liste des Serveurs",
+    "addBtn": "Ajouter un Serveur",
+    "removeBtn": "Supprimer un Serveur",
+    "editBtn": "Modifier un Serveur"
+  },
+  "userMenu": {
+    "heading": "Mes Serveurs",
+    "connectBtn": "Se Connecter à un Serveur",
+    "manageBtn": "Gérer la Liste des Serveurs",
+    "backBtn": "Retour"
+  },
+  "connect": {
+    "heading": "Se Connecter à un Serveur",
+    "addressTitle": "Adresse du Serveur",
+    "addressPlaceholder": "Veuillez entrer l'IP ou l'adresse",
+    "portTitle": "Port du Serveur",
+    "portPlaceholder": "Veuillez entrer le port",
+    "displayNameTitle": "(Optionnel) Nom d'Affichage dans la Liste",
+    "addToggle": "Ajouter à la liste des serveurs"
+  },
+  "add": {
+    "heading": "Ajouter un Serveur"
+  },
+  "edit": {
+    "heading": "Modifier le Serveur",
+    "chooseHeading": "Choisissez un Serveur",
+    "serverDropdown": "Serveurs"
+  },
+  "remove": {
+    "heading": "Supprimer un Serveur",
+    "serverDropdown": "Serveurs"
+  },
+  "serverGroup": {
+    "backBtn": "Retour à la Liste"
+  },
+  "retriggerMsg": {
+    "tip": "Accroupissez-vous ou frappez pour réafficher le menu",
+    "chat": ""
+  },
+  "error": {
+    "heading": "Erreur",
+    "addressLarge": "L'adresse est trop longue. (253 caractères maximum)",
+    "portLarge": "Le port est trop long. (10 caractères maximum)",
+    "nameLarge": "Le nom d'affichage est trop long. (36 caractères maximum)",
+    "invalidAddress": "Entrez une adresse valide. (Ex: play.exemple.net, 172.16.254.1)",
+    "invalidPort": "Entrez un port valide contenant uniquement des chiffres",
+    "invalidName": "Le nom d'affichage ne peut contenir que des lettres, chiffres et espaces",
+    "serverLimit": "Vous avez atteint la limite de serveurs. Supprimez-en pour en ajouter d'autres.",
+    "invalidUserServer": "Adresse de serveur invalide",
+    "invalidServerConnect": "Veuillez entrer une IP/Adresse et un port valides contenant uniquement des chiffres.",
+    "invalidServerRemove": "Serveur à supprimer invalide",
+    "invalidServerEdit": "Serveur à modifier invalide",
+    "transferError": "Erreur de connexion au serveur. Adresse invalide."
+  },
+  "disconnect": {
+    "inactivity": "Expulsé pour inactivité",
+    "exit": "Fermeture de la Liste des Serveurs",
+    "dataError": "Nous avons rencontré un problème en récupérant vos données. Veuillez signaler ce problème sur le GitHub BedrockConnect si cela persiste."
+  }
+}

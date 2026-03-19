@@ -1,0 +1,63 @@
+name: Bug report
+description: Create a report to help us improve BedrockConnect.
+body:
+- type: markdown
+  attributes:
+    value: |
+      Hey there, thanks for filling out this report.
+      
+      **NOTE:** If the BedrockConnect serverlist is not showing on your game, and you are instead being directed to the actual featured servers, this means the DNS needs to be re-configured on your console/network. **This does NOT mean BedrockConnect has been patched.** All known solutions for fixing this can be found here: [Troubleshooting](https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting#joining-the-featured-servers-still-directs-to-the-actual-servers-and-not-the-serverlist)
+
+      **READ BEFORE SUBMITTING AN ISSUE**:
+        - Check the [Troubleshooting page](https://github.com/Pugmatt/BedrockConnect/wiki/Troubleshooting) to see if your issue already has known solutions you can try
+        - Ensure that there is no similiar issue on the [issue tracker](https://github.com/Pugmatt/BedrockConnect/issues?q=is%3Aissue)
+- type: textarea
+  attributes:
+    label: What happened?
+    description: A clear and detailed description of the issue/bug that occurred.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Expected Behaviour?
+    description: A clear and detailed description of the behaviour you excepted to happen.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Steps to reproduce.
+    description: If applicable, provide some steps to reproduce this issue.
+    placeholder: |
+      1. Open [...]
+      2. Choose [...]
+      3. See error.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Screenshots/Videos
+    description: If possible, provide any videos/screenshots of the issue, to help explain the issue better.
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Minecraft Bedrock Version
+    description: What version of Minecraft Bedrock are you using?
+    placeholder: |
+      Example: 1.18.2
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: Console
+    description: What console are you using?
+    placeholder: |
+      Example: Nintendo Switch
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional Context
+    description: Add any additional context about the issue here.
+  validations:
+    required: false

@@ -1,0 +1,21 @@
+{
+  "_comment": "EXEMPLE — Fichier de serveur dynamique",
+  "_comment2": "Placer ce fichier (ou tout autre .json) dans ce dossier servers/ pour charger des serveurs sans recompiler",
+  "_comment3": "Renommer ce fichier en retirant 'exemple-' pour l'activer, ex: mon-serveur.json",
+
+  "featured": [],
+
+  "other": [
+    {
+      "id":          "exemple_serveur",
+      "name":        "Mon Serveur Exemple",
+      "address":     "play.monserveur.net",
+      "port":        19132,
+      "image":       "https://i.imgur.com/EXEMPLE.png",
+      "enabled":     false,
+      "description": "Serveur exemple — mettre enabled: true pour l'activer",
+      "added_date":  "2026-02-23",
+      "tags":        ["exemple"]
+    }
+  ]
+}

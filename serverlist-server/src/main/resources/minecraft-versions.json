@@ -1,0 +1,160 @@
+{
+  "_comment": "Minecraft Bedrock version management - Update this file when new versions are released",
+  "_maintenance_guide": {
+    "how_to_update": [
+      "1. Check the latest Bedrock protocol version from https://github.com/CloudburstMC/Protocol",
+      "2. Update 'latest_version' below with the new version info",
+      "3. Add the new codec to 'supported_versions' array",
+      "4. Update pom.xml bedrock-connection dependency if needed",
+      "5. Update BedrockProtocol.java with the new import and codec",
+      "6. Rebuild the project with: mvn clean package"
+    ],
+    "check_updates": "Visit https://repo.opencollab.dev/maven-snapshots/org/cloudburstmc/protocol/bedrock-connection/"
+  },
+  "protocol_info": {
+    "dependency": {
+      "groupId": "org.cloudburstmc.protocol",
+      "artifactId": "bedrock-connection",
+      "current_version": "3.0.0.Beta12-20260209.180455-4",
+      "repository": "https://repo.opencollab.dev/maven-snapshots/"
+    },
+    "latest_version": {
+      "codec": "v924",
+      "protocol": 924,
+      "minecraft_version": "1.21.80+",
+      "last_updated": "2025-02-09",
+      "notes": "Current latest supported version"
+    }
+  },
+  "supported_versions": [
+    {
+      "codec": "v649",
+      "protocol": 649,
+      "minecraft_version": "1.20.0 - 1.20.10",
+      "deprecated": false
+    },
+    {
+      "codec": "v662",
+      "protocol": 662,
+      "minecraft_version": "1.20.30 - 1.20.32",
+      "deprecated": false
+    },
+    {
+      "codec": "v671",
+      "protocol": 671,
+      "minecraft_version": "1.20.40 - 1.20.41",
+      "deprecated": false
+    },
+    {
+      "codec": "v685",
+      "protocol": 685,
+      "minecraft_version": "1.20.50 - 1.20.51",
+      "deprecated": false
+    },
+    {
+      "codec": "v686",
+      "protocol": 686,
+      "minecraft_version": "1.20.60 - 1.20.62",
+      "deprecated": false
+    },
+    {
+      "codec": "v712",
+      "protocol": 712,
+      "minecraft_version": "1.21.20 - 1.21.23",
+      "deprecated": false
+    },
+    {
+      "codec": "v729",
+      "protocol": 729,
+      "minecraft_version": "1.21.30 - 1.21.31",
+      "deprecated": false
+    },
+    {
+      "codec": "v748",
+      "protocol": 748,
+      "minecraft_version": "1.21.40 - 1.21.44",
+      "deprecated": false
+    },
+    {
+      "codec": "v766",
+      "protocol": 766,
+      "minecraft_version": "1.21.50 - 1.21.51",
+      "deprecated": false
+    },
+    {
+      "codec": "v776",
+      "protocol": 776,
+      "minecraft_version": "1.21.60",
+      "deprecated": false
+    },
+    {
+      "codec": "v786",
+      "protocol": 786,
+      "minecraft_version": "1.21.70+",
+      "deprecated": false
+    },
+    {
+      "codec": "v800",
+      "protocol": 800,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v818",
+      "protocol": 818,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v819",
+      "protocol": 819,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v827",
+      "protocol": 827,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v844",
+      "protocol": 844,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v859",
+      "protocol": 859,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v860",
+      "protocol": 860,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v898",
+      "protocol": 898,
+      "minecraft_version": "Preview",
+      "deprecated": false
+    },
+    {
+      "codec": "v924",
+      "protocol": 924,
+      "minecraft_version": "1.21.80+",
+      "deprecated": false,
+      "is_latest": true
+    }
+  ],
+  "maintenance_schedule": {
+    "check_frequency": "Every 2-4 weeks",
+    "sources": [
+      "https://github.com/CloudburstMC/Protocol",
+      "https://repo.opencollab.dev/maven-snapshots/org/cloudburstmc/protocol/bedrock-connection/",
+      "https://minecraft.wiki/w/Bedrock_Edition_version_history"
+    ]
+  }
+}
