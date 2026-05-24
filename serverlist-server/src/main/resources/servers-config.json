@@ -118,14 +118,6 @@
       "port": 19132,
       "image": "https://s3.nationstools.fr/public/bedrockconnect/Paladium.png",
       "enabled": true
-    },
-    {
-      "id": "babaland",
-      "name": "Babaland",
-      "address": "play.playmc.fr",
-      "port": 19132,
-      "image": "https://s3.nationstools.fr/public/bedrockconnect/PlayMC.png",
-      "enabled": true
     }
   ],
 
